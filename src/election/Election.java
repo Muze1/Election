@@ -20,12 +20,9 @@ import java.util.Collections;
 
 
 public class Election {
-
+// i need to change this
     public static void main(String[] args) {
         // We define our main class.
-
-        Scanner scan = new Scanner(System.in);
-        // Declaring our scanner object to accept user input.
 
         ArrayList<String> names = new ArrayList<String>();
         ArrayList<Integer> count = new ArrayList<Integer>();
@@ -35,7 +32,7 @@ public class Election {
             arraylist will store the number of times that a specific candidate's
             name appears in the votes.
         */
-
+fsfsfsfsfsf
         System.out.println("Please enter your votes (one vote per line, type 'quit' "
                 + "when you are finished): ");
         // Our prompt for the user.
