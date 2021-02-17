@@ -20,9 +20,12 @@ import java.util.Collections;
 
 
 public class Election {
-// i need to change this
+
     public static void main(String[] args) {
-        // We define our main class.
+    // We define our main class.
+
+        Scanner scan = new Scanner(System.in);
+        // Declaring our scanner object to accept user input.
 
         ArrayList<String> names = new ArrayList<String>();
         ArrayList<Integer> count = new ArrayList<Integer>();
@@ -32,16 +35,16 @@ public class Election {
             arraylist will store the number of times that a specific candidate's
             name appears in the votes.
         */
-fsfsfsfsfsf
+
         System.out.println("Please enter your votes (one vote per line, type 'quit' "
-                + "when you are finished): ");
+            + "when you are finished): ");
         // Our prompt for the user.
 
         while (true) {
         /* This is an infinite while loop, it will continue to run unless
             exited by a break statement.
         */
-            String input = scan.nextLine();
+        String input = scan.nextLine();
         /* Here, we've created our scanner variable that stores the user's input.
             This variable will be tested for its input by the succeeding if
             statements. The prompt for the user will not repeat, since it is
@@ -54,7 +57,8 @@ fsfsfsfsfsf
                     loop will exit. We use the .equals method to compare strings
                     instead of using the == and != operators.
                 */
-            } else if (names.indexOf(input) == -1) {
+            }
+            else if (names.indexOf(input) == -1) {
                 /* The .indexOf method checks an arraylist for the value within
                     the brackets (which, in our case, is the name that our user
                     has input) and returns the location (or index) of that object
@@ -69,7 +73,8 @@ fsfsfsfsfsf
                     arraylists with the respective values.
                 
                 */
-            } else if (names.indexOf(input) != -1) {
+            }
+            else if (names.indexOf(input) != -1) {
                 /* If the returned value is anything other than -1, it means that
                     there is already an identical object it our arraylist. Instead
                     of creating a new object, we retrieve the value of the object
